@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_info">
+
+    <fragment
+        android:id="@+id/navigation_info"
+        android:name="com.example.cardreaderdemo.ui.home.InfoFragment"
+        android:label="@string/title_info"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_certificate"
+        android:name="com.example.cardreaderdemo.ui.dashboard.DashboardFragment"
+        android:label="@string/title_certificate"
+        tools:layout="@layout/fragment_dashboard" />
+
+    <fragment
+        android:id="@+id/navigation_signing"
+        android:name="com.example.cardreaderdemo.ui.notifications.NotificationsFragment"
+        android:label="@string/title_signing"
+        tools:layout="@layout/fragment_notifications" />
+</navigation>
